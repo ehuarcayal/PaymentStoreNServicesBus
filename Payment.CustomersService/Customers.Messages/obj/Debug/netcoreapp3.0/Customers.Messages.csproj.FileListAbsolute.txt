@@ -1,0 +1,8 @@
+D:\ERICK-PC\Programas\VisualStudio\PaymentNetCore\Payment.CustomersService\Customers.Messages\bin\Debug\netcoreapp3.0\Customers.Messages.deps.json
+D:\ERICK-PC\Programas\VisualStudio\PaymentNetCore\Payment.CustomersService\Customers.Messages\bin\Debug\netcoreapp3.0\Customers.Messages.dll
+D:\ERICK-PC\Programas\VisualStudio\PaymentNetCore\Payment.CustomersService\Customers.Messages\bin\Debug\netcoreapp3.0\Customers.Messages.pdb
+D:\ERICK-PC\Programas\VisualStudio\PaymentNetCore\Payment.CustomersService\Customers.Messages\obj\Debug\netcoreapp3.0\Customers.Messages.csprojAssemblyReference.cache
+D:\ERICK-PC\Programas\VisualStudio\PaymentNetCore\Payment.CustomersService\Customers.Messages\obj\Debug\netcoreapp3.0\Customers.Messages.AssemblyInfoInputs.cache
+D:\ERICK-PC\Programas\VisualStudio\PaymentNetCore\Payment.CustomersService\Customers.Messages\obj\Debug\netcoreapp3.0\Customers.Messages.AssemblyInfo.cs
+D:\ERICK-PC\Programas\VisualStudio\PaymentNetCore\Payment.CustomersService\Customers.Messages\obj\Debug\netcoreapp3.0\Customers.Messages.dll
+D:\ERICK-PC\Programas\VisualStudio\PaymentNetCore\Payment.CustomersService\Customers.Messages\obj\Debug\netcoreapp3.0\Customers.Messages.pdb

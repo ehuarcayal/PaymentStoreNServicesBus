@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>ehuarcayal.Customers.Messages</id>
+    <version>1.0.0</version>
+    <authors>Efrain Bautista</authors>
+    <owners>Efrain Bautista</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <projectUrl>https://github.com/ehuarcayal/MoneyTransferEDADotNet</projectUrl>
+    <description>Package Description</description>
+    <copyright>2019</copyright>
+    <dependencies>
+      <group targetFramework=".NETCoreApp3.0">
+        <dependency id="NServiceBus" version="7.1.8" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="D:\ERICK-PC\Programas\VisualStudio\PaymentNetCore\Payment.CustomersService\Customers.Messages\bin\Debug\netcoreapp3.0\Customers.Messages.dll" target="lib\netcoreapp3.0\Customers.Messages.dll" />
+  </files>
+</package>

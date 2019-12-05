@@ -1,0 +1,15 @@
+D:\ERICK-PC\Programas\VisualStudio\MoneyTransferEDADotNet\MoneyTransfer.CustomersService\Customers.Domain\bin\Debug\netcoreapp3.0\Customers.Domain.deps.json
+D:\ERICK-PC\Programas\VisualStudio\MoneyTransferEDADotNet\MoneyTransfer.CustomersService\Customers.Domain\bin\Debug\netcoreapp3.0\Customers.Domain.dll
+D:\ERICK-PC\Programas\VisualStudio\MoneyTransferEDADotNet\MoneyTransfer.CustomersService\Customers.Domain\bin\Debug\netcoreapp3.0\Customers.Domain.pdb
+D:\ERICK-PC\Programas\VisualStudio\MoneyTransferEDADotNet\MoneyTransfer.CustomersService\Customers.Domain\obj\Debug\netcoreapp3.0\Customers.Domain.csprojAssemblyReference.cache
+D:\ERICK-PC\Programas\VisualStudio\MoneyTransferEDADotNet\MoneyTransfer.CustomersService\Customers.Domain\obj\Debug\netcoreapp3.0\Customers.Domain.AssemblyInfoInputs.cache
+D:\ERICK-PC\Programas\VisualStudio\MoneyTransferEDADotNet\MoneyTransfer.CustomersService\Customers.Domain\obj\Debug\netcoreapp3.0\Customers.Domain.AssemblyInfo.cs
+D:\ERICK-PC\Programas\VisualStudio\MoneyTransferEDADotNet\MoneyTransfer.CustomersService\Customers.Domain\obj\Debug\netcoreapp3.0\Customers.Domain.dll
+D:\ERICK-PC\Programas\VisualStudio\MoneyTransferEDADotNet\MoneyTransfer.CustomersService\Customers.Domain\obj\Debug\netcoreapp3.0\Customers.Domain.pdb
+D:\ERICK-PC\Programas\VisualStudio\PaymentNetCore\Payment.CustomersService\Customers.Domain\bin\Debug\netcoreapp3.0\Customers.Domain.deps.json
+D:\ERICK-PC\Programas\VisualStudio\PaymentNetCore\Payment.CustomersService\Customers.Domain\bin\Debug\netcoreapp3.0\Customers.Domain.dll
+D:\ERICK-PC\Programas\VisualStudio\PaymentNetCore\Payment.CustomersService\Customers.Domain\bin\Debug\netcoreapp3.0\Customers.Domain.pdb
+D:\ERICK-PC\Programas\VisualStudio\PaymentNetCore\Payment.CustomersService\Customers.Domain\obj\Debug\netcoreapp3.0\Customers.Domain.AssemblyInfoInputs.cache
+D:\ERICK-PC\Programas\VisualStudio\PaymentNetCore\Payment.CustomersService\Customers.Domain\obj\Debug\netcoreapp3.0\Customers.Domain.AssemblyInfo.cs
+D:\ERICK-PC\Programas\VisualStudio\PaymentNetCore\Payment.CustomersService\Customers.Domain\obj\Debug\netcoreapp3.0\Customers.Domain.dll
+D:\ERICK-PC\Programas\VisualStudio\PaymentNetCore\Payment.CustomersService\Customers.Domain\obj\Debug\netcoreapp3.0\Customers.Domain.pdb

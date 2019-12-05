@@ -1,0 +1,9 @@
+﻿2019-11-08 20:50:59.811 INFO  Logging to 'D:\ERICK-PC\Programas\VisualStudio\MoneyTransferEDADotNet\MoneyTransfer.CustomersService\Customers.NSB.Endpoint\bin\Debug\netcoreapp3.0\' with level Info
+2019-11-08 20:51:00.409 INFO  Auditing processed messages to 'audit'
+2019-11-08 20:51:00.491 INFO  No valid license could be found. Falling back to trial license with start date '2019-11-04'.
+2019-11-08 21:25:50.451 INFO  Logging to 'D:\ERICK-PC\Programas\VisualStudio\MoneyTransferEDADotNet\MoneyTransfer.CustomersService\Customers.NSB.Endpoint\bin\Debug\netcoreapp3.0\' with level Info
+2019-11-08 21:25:51.123 INFO  Auditing processed messages to 'audit'
+2019-11-08 21:25:51.238 INFO  No valid license could be found. Falling back to trial license with start date '2019-11-04'.
+2019-11-08 21:48:40.265 INFO  Logging to 'D:\ERICK-PC\Programas\VisualStudio\MoneyTransferEDADotNet\MoneyTransfer.CustomersService\Customers.NSB.Endpoint\bin\Debug\netcoreapp3.0\' with level Info
+2019-11-08 21:48:40.825 INFO  Auditing processed messages to 'audit'
+2019-11-08 21:48:40.912 INFO  No valid license could be found. Falling back to trial license with start date '2019-11-04'.
