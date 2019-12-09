@@ -9,6 +9,15 @@ namespace Customers.Domain
     {
         public virtual string Number { get; private set; }
 
+        public IdentityDocument(String _number)
+        {
+            Number = _number;
+        }
+
+        public IdentityDocument()
+        {            
+        }
+
         public static void CheckValidity(string number)
         {
             if (IsNullOrEmpty(number))

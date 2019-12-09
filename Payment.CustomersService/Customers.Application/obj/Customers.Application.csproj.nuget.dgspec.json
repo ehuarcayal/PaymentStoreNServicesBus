@@ -29,6 +29,229 @@
         },
         "frameworks": {
           "netcoreapp3.0": {
+            "projectReferences": {
+              "D:\\ERICK-PC\\Programas\\VisualStudio\\PaymentStoreNServicesBus\\Payment.CustomersService\\Customers.Domain\\Customers.Domain.csproj": {
+                "projectPath": "D:\\ERICK-PC\\Programas\\VisualStudio\\PaymentStoreNServicesBus\\Payment.CustomersService\\Customers.Domain\\Customers.Domain.csproj"
+              },
+              "D:\\ERICK-PC\\Programas\\VisualStudio\\PaymentStoreNServicesBus\\Payment.CustomersService\\Customers.Infrastructure\\Customers.Infrastructure.csproj": {
+                "projectPath": "D:\\ERICK-PC\\Programas\\VisualStudio\\PaymentStoreNServicesBus\\Payment.CustomersService\\Customers.Infrastructure\\Customers.Infrastructure.csproj"
+              },
+              "D:\\ERICK-PC\\Programas\\VisualStudio\\PaymentStoreNServicesBus\\UpgFisi.Common\\UpgFisi.Common\\UpgFisi.Common.csproj": {
+                "projectPath": "D:\\ERICK-PC\\Programas\\VisualStudio\\PaymentStoreNServicesBus\\UpgFisi.Common\\UpgFisi.Common\\UpgFisi.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Dapper": {
+              "target": "Package",
+              "version": "[1.50.5, )"
+            },
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.18, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\ERICK-PC\\Programas\\VisualStudio\\PaymentStoreNServicesBus\\Payment.CustomersService\\Customers.Domain\\Customers.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\ERICK-PC\\Programas\\VisualStudio\\PaymentStoreNServicesBus\\Payment.CustomersService\\Customers.Domain\\Customers.Domain.csproj",
+        "projectName": "Customers.Domain",
+        "projectPath": "D:\\ERICK-PC\\Programas\\VisualStudio\\PaymentStoreNServicesBus\\Payment.CustomersService\\Customers.Domain\\Customers.Domain.csproj",
+        "packagesPath": "C:\\Users\\Erick-PC\\.nuget\\packages\\",
+        "outputPath": "D:\\ERICK-PC\\Programas\\VisualStudio\\PaymentStoreNServicesBus\\Payment.CustomersService\\Customers.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Erick-PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "D:\\ERICK-PC\\Programas\\VisualStudio\\PaymentStoreNServicesBus\\UpgFisi.Common\\UpgFisi.Common\\UpgFisi.Common.csproj": {
+                "projectPath": "D:\\ERICK-PC\\Programas\\VisualStudio\\PaymentStoreNServicesBus\\UpgFisi.Common\\UpgFisi.Common\\UpgFisi.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\ERICK-PC\\Programas\\VisualStudio\\PaymentStoreNServicesBus\\Payment.CustomersService\\Customers.Infrastructure\\Customers.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\ERICK-PC\\Programas\\VisualStudio\\PaymentStoreNServicesBus\\Payment.CustomersService\\Customers.Infrastructure\\Customers.Infrastructure.csproj",
+        "projectName": "Customers.Infrastructure",
+        "projectPath": "D:\\ERICK-PC\\Programas\\VisualStudio\\PaymentStoreNServicesBus\\Payment.CustomersService\\Customers.Infrastructure\\Customers.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Erick-PC\\.nuget\\packages\\",
+        "outputPath": "D:\\ERICK-PC\\Programas\\VisualStudio\\PaymentStoreNServicesBus\\Payment.CustomersService\\Customers.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Erick-PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "D:\\ERICK-PC\\Programas\\VisualStudio\\PaymentStoreNServicesBus\\Payment.CustomersService\\Customers.Domain\\Customers.Domain.csproj": {
+                "projectPath": "D:\\ERICK-PC\\Programas\\VisualStudio\\PaymentStoreNServicesBus\\Payment.CustomersService\\Customers.Domain\\Customers.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "FluentMigrator": {
+              "target": "Package",
+              "version": "[3.2.1, )"
+            },
+            "FluentNHibernate": {
+              "target": "Package",
+              "version": "[2.1.2, )"
+            },
+            "Microsoft.AspNet.Identity.Core": {
+              "target": "Package",
+              "version": "[2.2.3, )"
+            },
+            "Microsoft.Extensions.Identity.Core": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "NServiceBus.NHibernate": {
+              "target": "Package",
+              "version": "[8.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\ERICK-PC\\Programas\\VisualStudio\\PaymentStoreNServicesBus\\UpgFisi.Common\\UpgFisi.Common\\UpgFisi.Common.csproj": {
+      "version": "1.0.2",
+      "restore": {
+        "projectUniqueName": "D:\\ERICK-PC\\Programas\\VisualStudio\\PaymentStoreNServicesBus\\UpgFisi.Common\\UpgFisi.Common\\UpgFisi.Common.csproj",
+        "projectName": "ehuarcayal.UpgFisi.Common",
+        "projectPath": "D:\\ERICK-PC\\Programas\\VisualStudio\\PaymentStoreNServicesBus\\UpgFisi.Common\\UpgFisi.Common\\UpgFisi.Common.csproj",
+        "packagesPath": "C:\\Users\\Erick-PC\\.nuget\\packages\\",
+        "outputPath": "D:\\ERICK-PC\\Programas\\VisualStudio\\PaymentStoreNServicesBus\\UpgFisi.Common\\UpgFisi.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Erick-PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
             "projectReferences": {}
           }
         },
@@ -40,6 +263,20 @@
       },
       "frameworks": {
         "netcoreapp3.0": {
+          "dependencies": {
+            "FluentNHibernate": {
+              "target": "Package",
+              "version": "[2.1.2, )"
+            },
+            "NHibernate": {
+              "target": "Package",
+              "version": "[5.2.6, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

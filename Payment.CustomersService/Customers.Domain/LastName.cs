@@ -9,6 +9,13 @@ namespace Customers.Domain
     {
         public virtual string Name { get; private set; }
 
+        public LastName(String _name)
+        {
+            Name = _name;
+        }
+        public LastName()
+        {            
+        }
         public static void CheckValidity(string name)
         {
             if (IsNullOrEmpty(name))

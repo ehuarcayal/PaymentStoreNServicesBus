@@ -1,9 +1,16 @@
-﻿using Customers.Application;
+﻿using AutoMapper;
+using Customers.Application;
+using Customers.Application.Contracts;
+using Customers.Application.Queries;
+using Customers.Application.Services;
+using Customers.Infrastructure.Auth;
+using Customers.Infrastructure.NHibernate;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using System;
 
 namespace Customers.API
 {
@@ -18,9 +25,13 @@ namespace Customers.API
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
-        {
+        {            
+            services.AddSingleton(new SessionFactory(Environment.GetEnvironmentVariable("MYSQL_STRCON_CORE_CUSTOMERS")));
+            services.AddSingleton(new Hasher());
             services.AddControllers();
+            services.AddScoped<IAuthApplicationService, AuthApplicationService>();
             services.AddScoped<ICustomerApplicationService, CustomerApplicationService>();            
+            services.AddSingleton<ICustomerQueries, CustomerMySQLDapperQueries>();            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

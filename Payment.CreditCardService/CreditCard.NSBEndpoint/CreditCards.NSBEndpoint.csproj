@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ehuarcayal.UpgFisi.Common" Version="1.0.2" />
+    <PackageReference Include="FluentMigrator" Version="3.2.1" />
+    <PackageReference Include="FluentMigrator.Runner" Version="3.2.1" />
+    <PackageReference Include="FluentMigrator.Runner.MySql" Version="3.2.1" />
+    <PackageReference Include="FluentNHibernate" Version="2.1.2" />
+    <PackageReference Include="MySql.Data" Version="8.0.18" />
+    <PackageReference Include="NHibernate" Version="5.2.6" />
+    <PackageReference Include="NServiceBus" Version="7.2.0" />
+    <PackageReference Include="NServiceBus.NHibernate" Version="8.2.0" />
+    <PackageReference Include="NServiceBus.RabbitMQ" Version="5.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CreditCard.Infrastructure\CreditCards.Infrastructure.csproj" />
+    <ProjectReference Include="..\CreditCard.Messages\CreditCards.Messages.csproj" />
+  </ItemGroup>
+
+</Project>

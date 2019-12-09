@@ -8,6 +8,8 @@ namespace Customers.Infrastructure.Mappings
         public CustomerMap()
         {
             Id(x => x.CustomerId).Column("customer_id");
+            Id(x => x.user).Column("user_name");
+            Id(x => x.passwordHash).Column("password_hash");
             Component(x => x.FirstName, m =>
             {
                 m.Map(x => x.Name, "first_name");

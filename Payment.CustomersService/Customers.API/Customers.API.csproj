@@ -12,6 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\UpgFisi.Common\UpgFisi.Common\UpgFisi.Common.csproj" />
     <ProjectReference Include="..\Customers.Application\Customers.Application.csproj" />
     <ProjectReference Include="..\Customers.Infrastructure\Customers.Infrastructure.csproj" />
   </ItemGroup>

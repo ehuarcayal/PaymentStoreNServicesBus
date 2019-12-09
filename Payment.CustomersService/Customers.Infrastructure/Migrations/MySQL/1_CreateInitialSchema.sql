@@ -12,6 +12,8 @@
 
 CREATE TABLE customer(
   customer_id VARCHAR(36) NOT NULL,
+  user_name VARCHAR(50) NOT NULL,
+  password_hash VARCHAR(150) NOT NULL,
   first_name VARCHAR(50) NOT NULL,
   last_name VARCHAR(50) NOT NULL,
   identity_document VARCHAR(8) NOT NULL,

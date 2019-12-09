@@ -1,7 +1,12 @@
 ﻿
+using System;
 using System.Collections.Generic;
 using Customers.Application;
+using Customers.Application.Contracts;
+using Customers.Application.Dto;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using UpgFisi.Common.Domain;
 
 namespace Customers.API.Controllers
 {
@@ -9,7 +14,14 @@ namespace Customers.API.Controllers
     [ApiController]
     public class CustomersController : ControllerBase
     {
-        //private readonly ICustomerApplicationService _customerApplicationService;
+        private readonly ICustomerQueries _customerQueries;
+        private readonly ICustomerApplicationService _customerApplicationService;
+
+        public CustomersController(ICustomerQueries customerQueries, ICustomerApplicationService customerService)
+        {
+            _customerQueries = customerQueries;
+            _customerApplicationService = customerService;
+        }
 
         // GET api/customers
         [HttpGet]
@@ -18,17 +30,44 @@ namespace Customers.API.Controllers
             return new string[] { "value1", "value2" };
         }
 
+        [HttpGet("list")]
+        public IActionResult GetListPaginated([FromQuery]int page = 0, [FromQuery]int pageSize = 10)
+        {
+            try
+            {
+                List<CustomerDto> customers = _customerQueries.GetListPaginated(page, pageSize);
+                return StatusCode(StatusCodes.Status200OK, customers);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return StatusCode(StatusCodes.Status500InternalServerError, new UpgFisi.Common.Domain.ApiStringResponse("Internal Server Error"));
+            }
+        }
+
         // GET api/customers/5
         [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
+        public IActionResult Get(String id)
         {
-            return "value";
+            try
+            {
+                CustomerDto customers = _customerQueries.getCustomer(id);
+                return StatusCode(StatusCodes.Status200OK, customers);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return StatusCode(StatusCodes.Status500InternalServerError, new ApiStringResponse("Internal Server Error"));
+            }
         }
 
         // POST api/customers
         [HttpPost]
-        public void Post([FromBody] string value)
+        public IActionResult Post([FromBody] NewCustomerDto newCustomerDto)
         {
+            newCustomerDto.CustomerId = Guid.NewGuid().ToString();
+            ResponseDto response = _customerApplicationService.Register(newCustomerDto);
+            return StatusCode(response.HttpStatusCode, response.Response);
         }
 
         // PUT api/customers/5

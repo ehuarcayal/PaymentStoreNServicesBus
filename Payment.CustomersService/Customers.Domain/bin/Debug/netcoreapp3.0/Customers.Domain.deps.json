@@ -25,18 +25,6 @@
           }
         }
       },
-      "ehuarcayal.UpgFisi.Common/1.0.2": {
-        "dependencies": {
-          "FluentNHibernate": "2.1.2",
-          "NHibernate": "5.2.6"
-        },
-        "runtime": {
-          "lib/netcoreapp3.0/UpgFisi.Common.dll": {
-            "assemblyVersion": "1.0.2.0",
-            "fileVersion": "1.0.2.0"
-          }
-        }
-      },
       "FluentNHibernate/2.1.2": {
         "dependencies": {
           "NHibernate": "5.2.6"
@@ -115,6 +103,14 @@
           "System.Threading.Timer": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0",
           "System.Xml.XDocument": "4.3.0"
+        }
+      },
+      "Newtonsoft.Json/12.0.3": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.3.23909"
+          }
         }
       },
       "NHibernate/5.2.6": {
@@ -832,6 +828,16 @@
           "System.Threading": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0"
         }
+      },
+      "ehuarcayal.UpgFisi.Common/1.0.2": {
+        "dependencies": {
+          "FluentNHibernate": "2.1.2",
+          "NHibernate": "5.2.6",
+          "Newtonsoft.Json": "12.0.3"
+        },
+        "runtime": {
+          "UpgFisi.Common.dll": {}
+        }
       }
     }
   },
@@ -847,13 +853,6 @@
       "sha512": "sha512-ZwCEpLCLZXkjzf1lYEixp9hgVlYYk33ACHn6xjFyVhGRi2BpoYQez0qtatbetdylASWYTG+cGz0CGR4z66JM4w==",
       "path": "antlr3.runtime/3.5.1",
       "hashPath": "antlr3.runtime.3.5.1.nupkg.sha512"
-    },
-    "ehuarcayal.UpgFisi.Common/1.0.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-PrX4kuOiiV6alAPJvHyCbEsDtijmYwAEtzZz1YcUbfjnNF5Pm9ft1sU6O9am72IxtmBELHpOMynwlWbgetx55g==",
-      "path": "ehuarcayal.upgfisi.common/1.0.2",
-      "hashPath": "ehuarcayal.upgfisi.common.1.0.2.nupkg.sha512"
     },
     "FluentNHibernate/2.1.2": {
       "type": "package",
@@ -896,6 +895,13 @@
       "sha512": "sha512-WcSp3+vP+yHNgS8EV5J7pZ9IRpeDuARBPN28by8zqff1wJQXm26PVU8L3/fYLBJVU7BtDyqNVWq2KlCVvSSR4A==",
       "path": "netstandard.library/1.6.1",
       "hashPath": "netstandard.library.1.6.1.nupkg.sha512"
+    },
+    "Newtonsoft.Json/12.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "path": "newtonsoft.json/12.0.3",
+      "hashPath": "newtonsoft.json.12.0.3.nupkg.sha512"
     },
     "NHibernate/5.2.6": {
       "type": "package",
@@ -1435,6 +1441,11 @@
       "sha512": "sha512-5zJ0XDxAIg8iy+t4aMnQAu0MqVbqyvfoUVl1yDV61xdo3Vth45oA2FoY4pPkxYAH5f8ixpmTqXeEIya95x0aCQ==",
       "path": "system.xml.xdocument/4.3.0",
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
+    },
+    "ehuarcayal.UpgFisi.Common/1.0.2": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }
