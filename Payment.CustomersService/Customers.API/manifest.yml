@@ -1,0 +1,13 @@
+---
+applications:
+- name: banking-api-customers
+  path: /bin/Release/netcoreapp3.0
+  memory: 512M
+  disk_quota: 2GB
+  instances: 1
+  buildpacks:
+  - dotnet_core_buildpack
+  stack: cflinuxfs3
+  env:
+    MYSQL_STRCON_CORE_CUSTOMERS: Data Source=dcs-instance.cojoeluw146l.us-east-1.rds.amazonaws.com;Database=CUSTOMERS;Port=3306;User Id=admin;Password=password;SslMode=none;AllowUserVariables=True;AutoEnlist=false
+    RABBITMQ_PCF_NSB_URL: host=crane.rmq.cloudamqp.com;username=twaxjtbk;password=6KSDoDhUN45xpheEP2D5bcn6-1-sLBp1;virtualhost=twaxjtbk

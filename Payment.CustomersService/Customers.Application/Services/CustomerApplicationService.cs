@@ -35,7 +35,7 @@ namespace Customers.Application
                 return new ResponseDto
                 {
                     HttpStatusCode = StatusCodes.Status201Created,
-                    //Response = new ApiStringResponse("Customer Created")
+                    Response = new ApiStringResponse("Customer Created")
                 };                
             }
             catch (Exception ex)
@@ -45,7 +45,7 @@ namespace Customers.Application
                 return new ResponseDto
                 {
                     HttpStatusCode = StatusCodes.Status500InternalServerError,
-                    //Response = new ApiStringResponse(ApiConstants.InternalServerError)
+                    Response = new ApiStringResponse("Server Internal Error")
                 };
             }
         }
