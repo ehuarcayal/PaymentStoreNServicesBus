@@ -2,10 +2,12 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.0</TargetFramework>
+    <ApplicationIcon />
+    <OutputType>Exe</OutputType>
+    <StartupObject />
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="ehuarcayal.UpgFisi.Common" Version="1.0.2" />
     <PackageReference Include="FluentMigrator" Version="3.2.1" />
     <PackageReference Include="FluentMigrator.Runner" Version="3.2.1" />
     <PackageReference Include="FluentMigrator.Runner.MySql" Version="3.2.1" />
@@ -18,6 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\UpgFisi.Common\UpgFisi.Common\UpgFisi.Common.csproj" />
     <ProjectReference Include="..\CreditCard.Infrastructure\CreditCards.Infrastructure.csproj" />
     <ProjectReference Include="..\CreditCard.Messages\CreditCards.Messages.csproj" />
   </ItemGroup>

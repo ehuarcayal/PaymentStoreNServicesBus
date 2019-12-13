@@ -57,6 +57,7 @@ namespace Customers.Application.Queries
         {
             string sql = @"
                     SELECT 
+                        c.customer_id AS CustomerId,
                         c.user_name AS user,
                         c.password_hash AS passwordHash
                     FROM 

@@ -10,7 +10,7 @@
   INDEX IX_outbox_dispatched_at(dispatched_at)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4;
 
-CREATE TABLE account(
+CREATE TABLE credit_card(
   credit_card_id VARCHAR(36) NOT NULL,
   number_card VARCHAR(20),
   customer_id VARCHAR(36) NOT NULL,

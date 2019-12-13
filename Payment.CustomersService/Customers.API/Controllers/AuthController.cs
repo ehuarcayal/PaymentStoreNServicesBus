@@ -23,7 +23,7 @@ namespace Customers.API.Controllers
         public IActionResult Login([FromBody] LoginDto loginDto)
         {
             LoginResponseDto response = _authApplicationService.Login(loginDto);
-            return StatusCode(response.HttpStatusCode, response.Response);
+            return StatusCode(response.HttpStatusCode, response.customerData != null? response.customerData: response.Response);
         }
     }
 }

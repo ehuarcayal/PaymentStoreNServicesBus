@@ -17,6 +17,18 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Customers.NSBEndpoint", "Pa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UpgFisi.Common", "UpgFisi.Common\UpgFisi.Common\UpgFisi.Common.csproj", "{D33EEEC4-8A63-453C-943C-93164FAFD424}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreditCards.API", "Payment.CreditCardService\CreditCard.API\CreditCards.API.csproj", "{5F7857C8-6834-4641-B932-FB77DBD4FB70}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreditCards.Application", "Payment.CreditCardService\CreditCard.Application\CreditCards.Application.csproj", "{3D19B74B-8624-404B-8DE8-AC6B317E0FF1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreditCards.Domain", "Payment.CreditCardService\CreditCard.Domain\CreditCards.Domain.csproj", "{97012E98-388B-4A0E-B42F-FD8EBFE62F16}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreditCards.Infrastructure", "Payment.CreditCardService\CreditCard.Infrastructure\CreditCards.Infrastructure.csproj", "{4A849AC1-E6CF-4E09-A4D6-94DB4FC297F3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreditCards.Messages", "Payment.CreditCardService\CreditCard.Messages\CreditCards.Messages.csproj", "{6C1EB128-4CCB-4A86-B34F-7CAAFF352E12}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreditCards.NSBEndpoint", "Payment.CreditCardService\CreditCard.NSBEndpoint\CreditCards.NSBEndpoint.csproj", "{739CB456-8278-42A7-94C7-0DCB964AB691}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +63,30 @@ Global
 		{D33EEEC4-8A63-453C-943C-93164FAFD424}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D33EEEC4-8A63-453C-943C-93164FAFD424}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D33EEEC4-8A63-453C-943C-93164FAFD424}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F7857C8-6834-4641-B932-FB77DBD4FB70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F7857C8-6834-4641-B932-FB77DBD4FB70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F7857C8-6834-4641-B932-FB77DBD4FB70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F7857C8-6834-4641-B932-FB77DBD4FB70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D19B74B-8624-404B-8DE8-AC6B317E0FF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D19B74B-8624-404B-8DE8-AC6B317E0FF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D19B74B-8624-404B-8DE8-AC6B317E0FF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D19B74B-8624-404B-8DE8-AC6B317E0FF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97012E98-388B-4A0E-B42F-FD8EBFE62F16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97012E98-388B-4A0E-B42F-FD8EBFE62F16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97012E98-388B-4A0E-B42F-FD8EBFE62F16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97012E98-388B-4A0E-B42F-FD8EBFE62F16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A849AC1-E6CF-4E09-A4D6-94DB4FC297F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A849AC1-E6CF-4E09-A4D6-94DB4FC297F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A849AC1-E6CF-4E09-A4D6-94DB4FC297F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A849AC1-E6CF-4E09-A4D6-94DB4FC297F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C1EB128-4CCB-4A86-B34F-7CAAFF352E12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C1EB128-4CCB-4A86-B34F-7CAAFF352E12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C1EB128-4CCB-4A86-B34F-7CAAFF352E12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C1EB128-4CCB-4A86-B34F-7CAAFF352E12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{739CB456-8278-42A7-94C7-0DCB964AB691}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{739CB456-8278-42A7-94C7-0DCB964AB691}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{739CB456-8278-42A7-94C7-0DCB964AB691}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{739CB456-8278-42A7-94C7-0DCB964AB691}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

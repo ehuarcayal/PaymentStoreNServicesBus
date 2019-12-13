@@ -2,7 +2,7 @@
 using Customers.Application.Dto;
 using Customers.Domain;
 using Customers.Infrastructure.Auth;
-using Customers.Infrastructure.NHibernate;
+using UpgFisi.Common.Infrastructure.NHibernate;
 using Microsoft.AspNetCore.Http;
 using System;
 
@@ -42,11 +42,16 @@ namespace Customers.Application.Services
                         HttpStatusCode = StatusCodes.Status401Unauthorized,
                         Response = new ApiStringResponse("Login Invalido")
                     };
-                }                
+                }
+
+                CustomerLoginResponseDto customerData = new CustomerLoginResponseDto();
+                customerData.customerId = customer.CustomerId;
+
                 return new LoginResponseDto
                 {
                     HttpStatusCode = StatusCodes.Status200OK,
-                    Response = new ApiStringResponse("Login Correcto")
+                    Response = new ApiStringResponse("Login Correcto"),
+                    customerData = customerData
                 };
             }
             catch (Exception ex)

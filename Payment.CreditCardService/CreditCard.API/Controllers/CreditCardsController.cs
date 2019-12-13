@@ -1,22 +1,50 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
+﻿using CreditCards.Application.Contracts;
+using CreditCards.Application.Dto;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Collections.Generic;
+using UpgFisi.Common.Domain;
 
 namespace CreditCards.API.Controllers
-{
-    [ApiController]
+{  
     [Route("api/[controller]")]
+    [ApiController]
     public class CreditCardsController : ControllerBase
-    {
-        private static readonly string[] Summaries = new[]
-        {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-        };
+    {                
+        private readonly ICreditCardQueries _creditCardQueries;
+        private readonly ICreditCardApplicationService _creditCardApplicationService;
 
-        private readonly ILogger<CreditCardsController> _logger;
+        public CreditCardsController(ICreditCardQueries creditCardQueries,
+            ICreditCardApplicationService creditCardrService)
+        {            
+            _creditCardQueries = creditCardQueries;
+            _creditCardApplicationService = creditCardrService;
+        }
 
-        public CreditCardsController(ILogger<CreditCardsController> logger)
+
+        [HttpGet("customer/{id}")]
+        public IActionResult Get(String id)
         {
-            _logger = logger;
-        }       
+            try
+            {
+                List<CreditCardDto> customers = _creditCardQueries.GetListBycustomer(id);
+                return StatusCode(StatusCodes.Status200OK, customers);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return StatusCode(StatusCodes.Status500InternalServerError, new ApiStringResponse("Internal Server Error"));
+            }
+        }
+
+        // POST api/customers
+        [HttpPost]
+        public IActionResult Post([FromBody] NewCreditCardDto newCreditCardDto)
+        {
+            newCreditCardDto.creditCardId = Guid.NewGuid().ToString();
+            ResponseDto response = _creditCardApplicationService.Register(newCreditCardDto);
+            return StatusCode(response.HttpStatusCode, response.Response);
+        }
     }
 }

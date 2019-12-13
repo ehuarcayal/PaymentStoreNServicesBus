@@ -5,12 +5,37 @@ namespace CreditCards.Domain
 {
     public class CreditCard
     {
-        public virtual string creditCardId { get; protected set; }
-        public virtual CustomerId customerId { get; protected set; }
-        public virtual string type { get; protected set; }
-        public virtual string number { get; protected set; }
-        public virtual DateTime expirationDate { get; protected set; }
-        public virtual Money amountLimit { get; protected set; }
-        public virtual string ccv { get; protected set; }
+        public virtual string creditCardId { get; set; }
+        public virtual CustomerId customerId { get; set; }
+        public virtual string type { get; set; }
+        public virtual string number { get; set; }
+        public virtual DateTime expirationDate { get; set; }
+        public virtual Money amountLimit { get; set; }
+        public virtual string ccv { get; set; }
+
+        public CreditCard(
+            string _creditCardId,
+            string _customerId,
+            String _type,
+            String _number,
+            DateTime _expirationDate,
+            Decimal _mount,
+            String _ccv            
+            )
+        {
+            customerId = new CustomerId(_customerId);            
+            creditCardId = _creditCardId;
+            type = _type;
+            expirationDate = _expirationDate;
+            type = _type;
+            number = _number;
+            ccv = _ccv;
+            amountLimit = new Money(_mount, Currency.PEN); 
+        }
+
+        public CreditCard()
+        {
+        }
+
     }
 }

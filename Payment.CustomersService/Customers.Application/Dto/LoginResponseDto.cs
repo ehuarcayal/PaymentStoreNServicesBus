@@ -6,5 +6,8 @@ namespace Customers.Application.Dto
 {
     public class LoginResponseDto : ResponseDto
     {
+        public CustomerLoginResponseDto customerData { get; set; }
+        
     }
+    
 }

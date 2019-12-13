@@ -7,6 +7,7 @@ using Customers.Application.Dto;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using UpgFisi.Common.Domain;
+using ResponseDto = Customers.Application.ResponseDto;
 
 namespace Customers.API.Controllers
 {

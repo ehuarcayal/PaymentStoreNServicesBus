@@ -1,9 +1,12 @@
 using CreditCards.Application;
+using CreditCards.Application.Contracts;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using System;
+using UpgFisi.Common.Infrastructure.NHibernate;
 
 namespace CreditCard.API
 {
@@ -19,8 +22,10 @@ namespace CreditCard.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddSingleton(new SessionFactory(Environment.GetEnvironmentVariable("MYSQL_STRCON_CORE_CREDITCARDS")));            
             services.AddControllers();
-            services.AddScoped<ICreditCardApplicationService, CreditCardApplicationService>();
+            services.AddScoped<ICreditCardApplicationService, CreditCardApplicationService>();            
+            services.AddSingleton<ICreditCardQueries, CreditCardMySQLQueries>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
