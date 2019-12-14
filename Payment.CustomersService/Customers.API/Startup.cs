@@ -4,13 +4,13 @@ using Customers.Application.Contracts;
 using Customers.Application.Queries;
 using Customers.Application.Services;
 using Customers.Infrastructure.Auth;
+using Customers.Infrastructure.NHibernate;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System;
-using UpgFisi.Common.Infrastructure.NHibernate;
 
 namespace Customers.API
 {
@@ -25,7 +25,8 @@ namespace Customers.API
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
-        {            
+        {
+            services.AddCors();
             services.AddSingleton(new SessionFactory(Environment.GetEnvironmentVariable("MYSQL_STRCON_CORE_CUSTOMERS")));
             services.AddSingleton(new Hasher());
             services.AddControllers();
@@ -41,6 +42,8 @@ namespace Customers.API
             {
                 app.UseDeveloperExceptionPage();
             }
+            app.UseCors(builder =>
+                builder.WithOrigins("http://localhost:3000"));
             app.UseRouting();
             app.UseAuthorization();
             app.UseEndpoints(endpoints =>

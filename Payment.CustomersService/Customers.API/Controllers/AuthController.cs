@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Customers.Application.Contracts;
 using Customers.Application.Dto;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Customers.API.Controllers

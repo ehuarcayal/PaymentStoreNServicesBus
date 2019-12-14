@@ -2,10 +2,10 @@
 using CreditCards.Application.Contracts;
 using CreditCards.Application.Dto;
 using CreditCards.Domain;
+using CreditCards.Infrastructure.NHibernate;
 using Microsoft.AspNetCore.Http;
 using System;
 using UpgFisi.Common.Domain;
-using UpgFisi.Common.Infrastructure.NHibernate;
 
 namespace CreditCards.Application
 {

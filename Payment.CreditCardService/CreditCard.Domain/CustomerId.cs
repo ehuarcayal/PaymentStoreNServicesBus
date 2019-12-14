@@ -9,5 +9,10 @@ namespace CreditCards.Domain
         {
             new Identity(id);
         }
+
+        public CustomerId()
+        {
+
+        }
     }
 }

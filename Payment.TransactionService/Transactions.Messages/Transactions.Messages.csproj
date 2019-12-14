@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <Authors>Efrain Bautista</Authors>
+    <Company>UPG FISI</Company>
+    <Copyright>2019</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/ehuarcayal/MoneyTransferEDADotNet</PackageProjectUrl>
+    <Product>Transactions Messages</Product>
+    <PackageId>ehuarcayal.Transactions.Messages</PackageId>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ehuarcayal.Accounts.Messages" Version="1.0.0" />
+    <PackageReference Include="NServiceBus" Version="7.2.0" />
+  </ItemGroup>
+
+</Project>

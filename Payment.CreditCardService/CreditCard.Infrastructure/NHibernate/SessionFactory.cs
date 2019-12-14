@@ -3,9 +3,13 @@ using FluentNHibernate.Cfg.Db;
 using FluentNHibernate.Conventions.AcceptanceCriteria;
 using FluentNHibernate.Conventions.Helpers;
 using NHibernate;
+using System;
+using System.Collections.Generic;
 using System.Reflection;
+using System.Text;
+using UpgFisi.Common.Infrastructure.NHibernate;
 
-namespace UpgFisi.Common.Infrastructure.NHibernate
+namespace CreditCards.Infrastructure.NHibernate
 {
     public class SessionFactory
     {

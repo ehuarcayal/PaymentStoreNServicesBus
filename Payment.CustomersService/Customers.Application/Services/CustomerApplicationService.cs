@@ -1,9 +1,9 @@
 ﻿using Customers.Application.Dto;
 using Customers.Domain;
+using Customers.Infrastructure.NHibernate;
 using Microsoft.AspNetCore.Http;
 using System;
 using UpgFisi.Common.Domain;
-using UpgFisi.Common.Infrastructure.NHibernate;
 
 namespace Customers.Application
 {

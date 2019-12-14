@@ -37,5 +37,19 @@ namespace CreditCards.Domain
         {
         }
 
+        public virtual void WithdrawMoney(decimal amount)
+        {
+            if (CanWithdrawMoney(amount))
+            {
+                var money = new Money(amount, Currency.USD);
+                amountLimit = amountLimit.Subtract(money);
+            }
+        }
+
+        public virtual bool CanWithdrawMoney(decimal amount)
+        {
+            return amountLimit.Amount >= amount;
+        }
+      
     }
 }

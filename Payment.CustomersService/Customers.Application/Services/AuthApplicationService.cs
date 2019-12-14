@@ -2,7 +2,7 @@
 using Customers.Application.Dto;
 using Customers.Domain;
 using Customers.Infrastructure.Auth;
-using UpgFisi.Common.Infrastructure.NHibernate;
+using Customers.Infrastructure.NHibernate;
 using Microsoft.AspNetCore.Http;
 using System;
 
