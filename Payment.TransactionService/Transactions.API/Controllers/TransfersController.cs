@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Transactions.Application;
 using Transactions.Application.Dtos;
@@ -8,6 +9,7 @@ namespace Transactions.API.Controllers
 {
     [Route("api/Payment")]
     [ApiController]
+    [EnableCors("AllowOrigin")]
     public class TransfersController : ControllerBase
     {
         private readonly ITransactionApplicationService _transactionApplicationService;

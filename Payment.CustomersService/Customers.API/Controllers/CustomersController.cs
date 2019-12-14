@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Customers.Application;
 using Customers.Application.Contracts;
 using Customers.Application.Dto;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using UpgFisi.Common.Domain;
@@ -13,6 +14,7 @@ namespace Customers.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [EnableCors("AllowOrigin")]
     public class CustomersController : ControllerBase
     {
         private readonly ICustomerQueries _customerQueries;

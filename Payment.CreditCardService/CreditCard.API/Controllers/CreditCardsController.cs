@@ -1,5 +1,6 @@
 ﻿using CreditCards.Application.Contracts;
 using CreditCards.Application.Dto;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -10,6 +11,7 @@ namespace CreditCards.API.Controllers
 {  
     [Route("api/[controller]")]
     [ApiController]
+    [EnableCors("AllowOrigin")]
     public class CreditCardsController : ControllerBase
     {                
         private readonly ICreditCardQueries _creditCardQueries;

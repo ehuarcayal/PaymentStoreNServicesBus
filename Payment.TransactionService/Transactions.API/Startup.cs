@@ -41,6 +41,12 @@ namespace Transactions.API
             routing.RouteToEndpoint(typeof(RequestPaymentCommand), "Payments.NSBEndpoint");
             var endpoint = Endpoint.Start(endpointConfiguration).GetAwaiter().GetResult();
             services.AddSingleton<IMessageSession>(endpoint);
+            services.AddCors(o => o.AddPolicy("AllowOrigin", builder =>
+            {
+                builder.AllowAnyOrigin()
+                       .AllowAnyMethod()
+                       .AllowAnyHeader();
+            }));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -51,6 +57,7 @@ namespace Transactions.API
                 app.UseDeveloperExceptionPage();
             }
             app.UseRouting();
+            app.UseCors("AllowOrigin");
             app.UseAuthorization();
             app.UseEndpoints(endpoints =>
                 endpoints.MapControllers()
