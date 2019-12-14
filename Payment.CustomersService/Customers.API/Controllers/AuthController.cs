@@ -11,6 +11,7 @@ namespace Customers.API.Controllers
 {
     [Route("/api/users")]
     [ApiController]
+    [EnableCors("AllowOrigin")]
     public class AuthController : ControllerBase
     {
         private readonly IAuthApplicationService _authApplicationService;

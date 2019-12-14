@@ -19,20 +19,25 @@ namespace Customers.API
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
-        }
+        }        
 
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
-        {
-            services.AddCors();
+        {            
             services.AddSingleton(new SessionFactory(Environment.GetEnvironmentVariable("MYSQL_STRCON_CORE_CUSTOMERS")));
             services.AddSingleton(new Hasher());
             services.AddControllers();
             services.AddScoped<IAuthApplicationService, AuthApplicationService>();
             services.AddScoped<ICustomerApplicationService, CustomerApplicationService>();            
-            services.AddSingleton<ICustomerQueries, CustomerMySQLDapperQueries>();            
+            services.AddSingleton<ICustomerQueries, CustomerMySQLDapperQueries>();
+            services.AddCors(o => o.AddPolicy("AllowOrigin", builder =>
+            {
+                builder.AllowAnyOrigin()
+                       .AllowAnyMethod()
+                       .AllowAnyHeader();
+            }));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -42,9 +47,8 @@ namespace Customers.API
             {
                 app.UseDeveloperExceptionPage();
             }
-            app.UseCors(builder =>
-                builder.WithOrigins("http://localhost:3000"));
             app.UseRouting();
+            app.UseCors("AllowOrigin");
             app.UseAuthorization();
             app.UseEndpoints(endpoints =>
                 endpoints.MapControllers()
